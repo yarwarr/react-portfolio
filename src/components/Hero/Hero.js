@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -12,12 +16,13 @@ const Hero = (props) => (
         Mubashar Warriach's Personal Portfolio
       </SectionTitle>
       <SectionText>
-        I am a software developer with a passion for learning and building new things. I am currently a  Software Engineering Student at Rochester Institute of Technology. I am looking for an internship position as a software developer.
+        I am currently a Software Engineering Student at Rochester Institute of
+        Technology with a passion for learning and building new things. I am
+        looking for an internship position as a software developer.
       </SectionText>
-      <Button onClick={() => window.location = ''}>Learn More</Button>
+      <Button onClick={() => (window.location = "")}>Learn More</Button>
     </LeftSection>
   </Section>
-
 );
 
 export default Hero;
